@@ -3325,7 +3325,7 @@ main {
   font-size: 3.2em;
   font-weight: bolder; }
 
-.text {
+.text, .text-left {
   font-size: 1.9em;
   line-height: 35px;
   vertical-align: middle;
@@ -3334,10 +3334,19 @@ main {
   margin-top: 8%;
   margin-bottom: 5%;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-right: 7%;
+  padding-left: 0; }
   @media screen and (max-width: 800px) {
-    .text {
-      margin-top: 2%; } }
+    .text, .text-left {
+      margin-top: 2%;
+      margin-right: auto;
+      margin-left: auto; } }
+
+.text-left {
+  margin-left: 6%;
+  padding-right: 0;
+  padding-left: 7%; }
 
 #section-2, #section-21, #section-22, #section-23 {
   background-color: #ffffff;
