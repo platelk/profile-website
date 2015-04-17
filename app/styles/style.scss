@@ -3,7 +3,7 @@
 
 .section {
   width: 100%;
-  min-height: 500px;
+  min-height: 550px;
   margin-bottom: 30px;
   padding: 0;
 
@@ -31,6 +31,29 @@
   width: 85%;
   @media screen and (max-width: 800px) {
     width: 95%;
+    height: auto;
+  }
+}
+
+.title-text {
+  font-size: 3.2em;
+  font-weight: bolder;
+}
+
+.text {
+  font-size: 1.9em;
+  line-height: 35px;
+  vertical-align: middle;
+  font-weight: lighter;
+
+  max-width: 800px;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 2%;
   }
 }
 
@@ -38,6 +61,43 @@
   @extend .section;
   background-color: #ffffff;
   margin-bottom: 0;
+
+  @media screen and (max-width: 800px) {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 400px;
+    margin-top: 10px;
+
+    @media screen and (max-width: 800px) {
+      height: auto;
+    }
+  }
+
+  .text {
+  }
+}
+
+#section-21 {
+  @extend #section-2;
+  background-color: #80CBC4;
+  margin-bottom: 0;
+}
+
+#section-22 {
+  @extend #section-2;
+  background-color: inherit;
+  margin-bottom: 0;
+}
+
+#section-23 {
+  @extend #section-2;
+  background-color: #ffffff;
 }
 
 #section-3 {

@@ -3294,13 +3294,13 @@ main {
   font-weight: 700;
   src: url(/fonts/RobotoCondensed-BoldItalic.eot);
   src: local("Roboto Condensed Bold Italic"), local("RobotoCondensed-BoldItalic"), url(/fonts/RobotoCondensed-BoldItalic.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-BoldItalic.woff) format("woff"); }
-.section, #main-page, #section-1, #section-2, #section-3, #contact, #footer {
+.section, #main-page, #section-1, #section-2, #section-21, #section-22, #section-23, #section-3, #contact, #footer {
   width: 100%;
-  min-height: 500px;
+  min-height: 550px;
   margin-bottom: 30px;
   padding: 0; }
   @media screen and (max-width: 800px) {
-    .section, #main-page, #section-1, #section-2, #section-3, #contact, #footer {
+    .section, #main-page, #section-1, #section-2, #section-21, #section-22, #section-23, #section-3, #contact, #footer {
       height: auto; } }
 
 #main-page {
@@ -3318,11 +3318,54 @@ main {
   width: 85%; }
   @media screen and (max-width: 800px) {
     #section-1 {
-      width: 95%; } }
+      width: 95%;
+      height: auto; } }
 
-#section-2 {
+.title-text {
+  font-size: 3.2em;
+  font-weight: bolder; }
+
+.text {
+  font-size: 1.9em;
+  line-height: 35px;
+  vertical-align: middle;
+  font-weight: lighter;
+  max-width: 800px;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  margin-right: auto;
+  margin-left: auto; }
+  @media screen and (max-width: 800px) {
+    .text {
+      margin-top: 2%; } }
+
+#section-2, #section-21, #section-22, #section-23 {
   background-color: #ffffff;
   margin-bottom: 0; }
+  @media screen and (max-width: 800px) {
+    #section-2, #section-21, #section-22, #section-23 {
+      height: auto;
+      padding-bottom: 40px; } }
+  #section-2 img, #section-21 img, #section-22 img, #section-23 img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 400px;
+    margin-top: 10px; }
+    @media screen and (max-width: 800px) {
+      #section-2 img, #section-21 img, #section-22 img, #section-23 img {
+        height: auto; } }
+
+#section-21 {
+  background-color: #80CBC4;
+  margin-bottom: 0; }
+
+#section-22 {
+  background-color: inherit;
+  margin-bottom: 0; }
+
+#section-23 {
+  background-color: #ffffff; }
 
 #section-3 {
   margin-bottom: 0;
