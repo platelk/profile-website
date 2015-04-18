@@ -3323,7 +3323,6 @@ main {
   width: 85%; }
   @media screen and (max-width: 1560px) {
     #section-1 {
-      width: 95%;
       height: 600px; } }
   @media screen and (max-width: 1260px) {
     #section-1 {
@@ -3331,7 +3330,7 @@ main {
   @media screen and (max-width: 890px) {
     #section-1 {
       width: 95%;
-      height: 1000px; } }
+      height: 1150px; } }
 
 .title-text {
   font-size: 3.2em;
