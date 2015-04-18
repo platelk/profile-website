@@ -3375,7 +3375,7 @@ main {
       padding-left: 0; } }
 
 @media screen and (max-width: 890px) {
-  .text-block, .text-left-block {
+  .text-block {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%; } }
@@ -3383,6 +3383,11 @@ main {
 .text-left-block {
   margin-left: 13%;
   margin-right: 2%; }
+  @media screen and (max-width: 890px) {
+    .text-left-block {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 #section-2, #section-21, #section-22, #section-23 {
   background-color: #ffffff;

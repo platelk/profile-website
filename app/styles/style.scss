@@ -109,7 +109,12 @@
 .text-left-block {
   margin-left: 13%;
   margin-right: 2%;
-  @extend .text-block;
+
+  @media screen and (max-width: 890px) {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 #section-2 {
