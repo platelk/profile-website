@@ -41,5 +41,3 @@ Après avoir cloner le dépot :
 
 Afin de lancer le projet, il suffit de lancer le serveur grace à la commande suivante:
 > $> node server/app.js
-    
-

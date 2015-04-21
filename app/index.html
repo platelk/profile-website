@@ -34,6 +34,8 @@
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="application/javascript"></script>
+    <script src="scripts/scrollspy.js" type="application/javascript"></script>
+    <script src="scripts/smooth-scroll-min.js" type="application/javascript"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -54,7 +56,7 @@
     <header class="app-bar promote-layer">
       <div class="app-bar-container">
         <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <h1 class="logo"><strong>Profile</strong></h1>
+        <h1 class="logo"><img src="images/profilrh-white.png"> </h1>
         <section class="app-bar-actions">
         <!-- Put App Bar Buttons Here -->
         <!-- <button><i class="icon icon-star">Test</i></button>
@@ -63,14 +65,14 @@
       </div>
     </header>
 
-    <nav class="navdrawer-container promote-layer">
+    <nav id="nav" class="navdrawer-container promote-layer">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="#main-page">Le projet</a></li>
-        <li><a href="#section-1">Pourquoi profile</a></li>
-        <li><a href="#section-2">Pour l'entreprise</a></li>
-        <li><a href="#section-3">L'équipe</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a data-scroll href="#main-page">Le projet</a></li>
+        <li><a data-scroll href="#section-1">Pourquoi profile</a></li>
+        <li><a data-scroll href="#section-2">Pour l'entreprise</a></li>
+        <li><a data-scroll href="#section-3">L'équipe</a></li>
+        <li><a data-scroll href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -81,8 +83,8 @@
         </div>
         <div class="title text-center g--half g--centered">
           <div>
-            <h1>Profile</h1>
-            <h3>Solution simple de gestion d'entreprise</h3>
+            <h1><img src="images/profilrh-white.png"></h1>
+            <h3>Solution simple de gestion de vos RH</h3>
           </div>
         </div>
       </div>
@@ -92,7 +94,7 @@
           <p class="centered">
             Profile relie vos différents systèmes RH en <span class="themed">un seul tableau</span> de bord. Vous pouvez tout gérer en <span class="themed">un seul endroit </span>, en vous affranchissant de la paperasse.
           </p>
-          <span class="icon-circle--large themed--background">
+          <span class="icon-circle--large themed--background card-icon">
             <i class="icon icon-multi-device-layouts"></i>
           </span>
         </div>
@@ -101,7 +103,7 @@
           <p class="centered">
             Profile gère vos assurances maladie, congés, recrutement, fiche de paie, etc. en <span class="themed">ligne</span> et <span class="themed">automatiquement</span>
           </p>
-          <span class="icon-circle--large themed--background">
+          <span class="icon-circle--large themed--background card-icon">
             <i class="icon icon-chevron-right"></i>
           </span>
         </div>
@@ -110,7 +112,7 @@
           <p class="centered">
             Vous économiserez de l'argent sur plusieurs fronts, avec une gestion <span class="themed">RH optimisée</span> à travers le logiciel Profile.
           </p>
-          <span class="icon-circle--large themed--background">
+          <span class="icon-circle--large themed--background card-icon">
             <i class="icon icon-performance"></i>
           </span>
         </div>
@@ -119,7 +121,7 @@
         <div class="center-block row">
           <h2 class="text-center title-text">Tous les documents à un seul endroit</h2>
           <div class="col-md-6 centered">
-            <img src="images/all-in-one.svg">
+            <img src="images/profilerh-all-in-one.png">
           </div>
           <div class="col-md-4">
             <div class="text-center text">
@@ -137,7 +139,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <img src="images/health.png">
+            <img src="images/profilerh-connect.png">
           </div>
         </div>
       </div>
@@ -145,7 +147,7 @@
         <h2 class="text-center title-text">Profile a pour but de vous simplifier la vie</h2>
         <div class="center-block row">
           <div class="col-md-6 centered">
-            <img src="images/simple.svg">
+            <img src="images/profilerh-simple.png">
           </div>
           <div class="col-md-4">
             <div class="text-center text">
@@ -163,7 +165,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <img src="images/connected-api.svg">
+            <img src="images/profilerh-api.png">
           </div>
         </div>
       </div>
@@ -181,9 +183,9 @@
                 </p>
               </div>
               <div class="social-icon-list">
-                <img src="images/social-media-icon/googleplus.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/linkedin.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/github.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/googleplus.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/linkedin.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/github.png" class="img-circle" alt=""/>
               </div>
             </div>
           </div>
@@ -199,9 +201,9 @@
                 </p>
               </div>
               <div class="social-icon-list">
-                <img src="images/social-media-icon/googleplus.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/linkedin.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/github.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/googleplus.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/linkedin.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/github.png" class="img-circle" alt=""/>
               </div>
             </div>
           </div>
@@ -219,9 +221,9 @@
                 </p>
               </div>
               <div class="social-icon-list">
-                <img src="images/social-media-icon/googleplus.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/linkedin.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/github.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/googleplus.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/linkedin.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/github.png" class="img-circle" alt=""/>
               </div>
             </div>
           </div>
@@ -237,9 +239,9 @@
                 </p>
               </div>
               <div class="social-icon-list">
-                <img src="images/social-media-icon/googleplus.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/linkedin.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/github.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/googleplus.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/linkedin.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/github.png" class="img-circle" alt=""/>
               </div>
             </div>
           </div>
@@ -257,9 +259,9 @@
                 </p>
               </div>
               <div class="social-icon-list">
-                <img src="images/social-media-icon/googleplus.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/linkedin.png" class="img-circle" alt=""/>
-                <img src="images/social-media-icon/github.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/googleplus.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/linkedin.png" class="img-circle" alt=""/>
+                <img src="images/social-media-icon/32x32%20PNG/github.png" class="img-circle" alt=""/>
               </div>
             </div>
           </div>
@@ -271,10 +273,10 @@
             Suivez Profile à travers les réseaux sociaux
           </p>
           <div>
-            <img src="images/social-media-icon/googleplus.png" class="img-circle" alt=""/>
-            <img src="images/social-media-icon/linkedin.png" class="img-circle" alt=""/>
-            <img src="images/social-media-icon/github.png" class="img-circle" alt=""/>
-            <img src="images/social-media-icon/facebook.png" class="img-circle" alt=""/>
+            <img src="images/social-media-icon/64x64%20PNG/googleplus.png" class="img-circle" alt=""/>
+            <img src="images/social-media-icon/64x64%20PNG/linkedin.png" class="img-circle" alt=""/>
+            <img src="images/social-media-icon/64x64%20PNG/github.png" class="img-circle" alt=""/>
+            <img src="images/social-media-icon/64x64%20PNG/facebook.png" class="img-circle" alt=""/>
           </div>
         </div>
         <div class="col-md-6 contact-form">
@@ -284,19 +286,20 @@
           <form action="">
             <div class="form-group contact-input">
               <label for="email">Addresse email</label>
-              <input type="email" class="form-control" id="email" placeholder="Email">
+              <input type="email"  id="email" placeholder="Email">
             </div>
             <div class="form-group contact-input">
               <label for="subject">Sujet</label>
-              <input type="text" class="form-control" id="subject" placeholder="Sujet">
+              <input type="text" id="subject" placeholder="Sujet">
             </div>
             <div>
               <div class="form-group">
                 <label for="content">Message</label>
-              <textarea type="text" class="form-control" id="content" row="10" cols="50" placeholder="Contenu">
+              <textarea type="text" id="content" row="10" cols="50" placeholder="Contenu">
               </textarea>
               </div>
             </div>
+            <button type="submit">Envoyer</button>
           </form>
         </div>
       </div>
@@ -311,6 +314,20 @@
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
+      $(document).ready(function() {
+        $('#nav').scrollspy({
+          min: $('#nav').offset().top,
+          onEnter: function(element, position) {
+            $("#nav").addClass('fixed');
+          },
+          onLeave: function(element, position) {
+            $("#nav").removeClass('fixed');
+          }
+        });
+      });
+
+      smoothScroll.init();
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

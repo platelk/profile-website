@@ -3307,6 +3307,12 @@ main {
       height: auto;
       min-height: 650px; } }
 
+.logo img {
+  height: 60px; }
+  @media screen and (max-width: 990px) {
+    .logo img {
+      height: 45px; } }
+
 #main-page {
   z-index: -2;
   width: 100%;
@@ -3470,7 +3476,7 @@ main {
       .title div {
         padding-top: 40%; } }
 
-.shadow-z-1, .social-icon-list img:hover {
+.shadow-z-1, .social-icon-list img:hover, .contact-form form button {
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12); }
 
 .shadow-z-1-hover {
@@ -3495,16 +3501,16 @@ main {
   margin-right: 1%;
   margin-left: 1.4%;
   padding: 5px;
-  height: 420px; }
+  height: 470px; }
   @media screen and (max-width: 1560px) {
     .simple-card {
-      min-height: 550px;
+      min-height: 530px;
       height: auto; } }
   @media screen and (max-width: 1260px) {
     .simple-card {
-      min-height: 600px;
+      min-height: 450px;
       height: auto; } }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1110px) {
     .simple-card {
       min-height: 650px;
       height: auto; } }
@@ -3516,16 +3522,32 @@ main {
       width: 93%;
       margin-right: 3%;
       margin-left: 3%; } }
-  .simple-card .icon-circle--large {
-    position: relative; }
   .simple-card:hover {
     animation-name: elevate;
     animation-duration: 0.3s; }
+  .simple-card h2 {
+    height: 100px; }
+    @media screen and (max-width: 1260px) {
+      .simple-card h2 {
+        height: 120px; } }
+    @media screen and (max-width: 890px) {
+      .simple-card h2 {
+        height: auto; } }
   .simple-card p {
     padding: 20px;
     font-size: 1.5em;
-    min-height: 50%; }
-    @media screen and (max-width: 800px) {
+    min-height: 50%;
+    height: 220px; }
+    @media screen and (max-width: 1540px) {
+      .simple-card p {
+        height: 310px; } }
+    @media screen and (max-width: 1260px) {
+      .simple-card p {
+        height: 330px; } }
+    @media screen and (max-width: 1110px) {
+      .simple-card p {
+        height: 450px; } }
+    @media screen and (max-width: 890px) {
       .simple-card p {
         height: auto; } }
     .simple-card p span {
@@ -3537,10 +3559,12 @@ main {
   to {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); } }
 .card-icon {
-  position: relative;
-  top: 120%;
-  height: 30%;
-  width: 30%; }
+  height: 20%;
+  width: 20%; }
+  @media screen and (max-width: 890px) {
+    .card-icon {
+      height: 85px;
+      width: 85px; } }
 
 @media screen and (max-width: 800px) {
   #section-3 .row .col-md-6 {
@@ -3601,10 +3625,18 @@ main {
     font-size: 1.8em;
     font-weight: bolder; }
   .contact-form form input, .contact-form form textarea {
+    display: block;
+    margin: 0;
     padding: 10px;
     color: #f8f8f8;
     border-radius: 6px;
+    width: 90%;
     background-color: #009688; }
+  .contact-form form button {
+    background-color: #009688;
+    border-radius: 6px;
+    border: none;
+    padding: 15px; }
 
 .social-network p {
   font-size: 1.8em;
@@ -3613,5 +3645,17 @@ main {
   width: 50px;
   height: 50px;
   margin: 5px; }
+
+.active {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+#nav.fixed {
+  position: fixed;
+  margin: 0 0 0 -20px;
+  top: 0;
+  box-shadow: 0 4px 8px -6px #000; }
+
+#nav.fixed + * {
+  padding-top: 70px; }
 
 /*# sourceMappingURL=style.css.map */
