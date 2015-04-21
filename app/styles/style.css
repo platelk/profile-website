@@ -3476,7 +3476,7 @@ main {
       .title div {
         padding-top: 40%; } }
 
-.shadow-z-1, .social-icon-list img:hover, .contact-form form button {
+.shadow-z-1, .social-icon-list img:hover, .contact-form button {
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12); }
 
 .shadow-z-1-hover {
@@ -3619,12 +3619,13 @@ main {
   margin-right: 15px;
   float: left; }
 
-.contact-form form {
+.contact-form {
   color: #ffffff; }
-  .contact-form form p {
+  .contact-form p {
     font-size: 1.8em;
     font-weight: bolder; }
-  .contact-form form input, .contact-form form textarea {
+  .contact-form input, .contact-form textarea {
+    border: none;
     display: block;
     margin: 0;
     padding: 10px;
@@ -3632,7 +3633,7 @@ main {
     border-radius: 6px;
     width: 90%;
     background-color: #009688; }
-  .contact-form form button {
+  .contact-form button {
     background-color: #009688;
     border-radius: 6px;
     border: none;

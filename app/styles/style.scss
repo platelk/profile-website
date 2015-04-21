@@ -481,14 +481,16 @@
   float: left;
 }
 
-.contact-form form {
+.contact-form {
   color: #ffffff;
+
   p {
     font-size: 1.8em;
     font-weight: bolder;
   }
 
   input, textarea {
+    border: none;
     display: block;
     margin: 0;
     padding: 10px;

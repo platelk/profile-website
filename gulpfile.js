@@ -43,10 +43,13 @@ var AUTOPREFIXER_BROWSERS = [
 // Lint JavaScript
 gulp.task('jshint', function () {
   return gulp.src('app/scripts/**/*.js')
+    .pipe(gulp.dest('dist/scripts'))
+    .pipe($.size({title: 'copy'}))
     .pipe(reload({stream: true, once: true}))
     .pipe($.jshint())
-    .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
+    .pipe($.jshint.reporter('jshint-stylish'));
+    //.pipe($.if(!browserSync.active, $.jshint.reporter('fail')))
+
 });
 
 // Optimize images
@@ -115,9 +118,7 @@ gulp.task('html', function () {
     //       the next line to only include styles your project uses.
     .pipe($.if('*.css', $.uncss({
       html: [
-        'app/basic.html',
-        'app/index.html',
-        'app/styleguide.html'
+        'app/index.html'
       ],
       // CSS Selectors for UnCSS to ignore
       ignore: [
