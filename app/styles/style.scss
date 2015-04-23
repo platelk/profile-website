@@ -1,5 +1,13 @@
 @import 'main';
 
+@font-face {
+  font-family: segoui;
+  src: url(../fonts/segoeui.ttf);
+}
+
+* {
+  font-family: segoui, 'Roboto Condensed', Helvetica, Arial, sans-serif;
+}
 
 .section {
   width: 100%;
@@ -325,6 +333,10 @@
   h2 {
     height: 100px;
 
+    @media screen and (max-width: 1405px) {
+      height: 130px;
+    }
+
     @media screen and (max-width: 1260px) {
       height: 120px;
     }
@@ -392,14 +404,6 @@
   }
 
   .icon {
-  }
-}
-
-.social-icon-list {
-  img {
-    &:hover{
-      @extend .shadow-z-1;
-    }
   }
 }
 
@@ -507,6 +511,13 @@
     border: none;
     padding: 15px;
 
+    &:hover {
+      background-color: #4e9693;
+    }
+
+    &:active {
+      @extend .shadow-z-2;
+    }
   }
 }
 
@@ -535,4 +546,15 @@
 }
 #nav.fixed + * {
   padding-top: 70px;
+}
+
+
+.social-icon-list {
+  img {
+    width: 32px;
+    height: 32px;
+    &:hover{
+      @extend .shadow-z-2;
+    }
+  }
 }

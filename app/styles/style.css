@@ -3294,6 +3294,12 @@ main {
   font-weight: 700;
   src: url(/fonts/RobotoCondensed-BoldItalic.eot);
   src: local("Roboto Condensed Bold Italic"), local("RobotoCondensed-BoldItalic"), url(/fonts/RobotoCondensed-BoldItalic.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-BoldItalic.woff) format("woff"); }
+@font-face {
+  font-family: segoui;
+  src: url(../fonts/segoeui.ttf); }
+* {
+  font-family: segoui, 'Roboto Condensed', Helvetica, Arial, sans-serif; }
+
 .section, #main-page, #section-1, #section-2, #section-21, #section-22, #section-23, #section-3, #contact, #footer {
   width: 100%;
   min-height: 550px;
@@ -3476,13 +3482,13 @@ main {
       .title div {
         padding-top: 40%; } }
 
-.shadow-z-1, .social-icon-list img:hover, .contact-form button {
+.shadow-z-1, .contact-form button {
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12); }
 
 .shadow-z-1-hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.shadow-z-2, .simple-card:hover {
+.shadow-z-2, .simple-card:hover, .contact-form button:active, .social-icon-list img:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .shadow-z-3 {
@@ -3527,6 +3533,9 @@ main {
     animation-duration: 0.3s; }
   .simple-card h2 {
     height: 100px; }
+    @media screen and (max-width: 1405px) {
+      .simple-card h2 {
+        height: 130px; } }
     @media screen and (max-width: 1260px) {
       .simple-card h2 {
         height: 120px; } }
@@ -3638,6 +3647,8 @@ main {
     border-radius: 6px;
     border: none;
     padding: 15px; }
+    .contact-form button:hover {
+      background-color: #4e9693; }
 
 .social-network p {
   font-size: 1.8em;
@@ -3658,5 +3669,9 @@ main {
 
 #nav.fixed + * {
   padding-top: 70px; }
+
+.social-icon-list img {
+  width: 32px;
+  height: 32px; }
 
 /*# sourceMappingURL=style.css.map */
