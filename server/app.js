@@ -45,7 +45,7 @@ app.get('/', function (req, res) {
 app.post('/contact', function(req, res) {
   console.log(req.body);
   console.log("Receive contact form");
-  //sendContactMail(req.body['email'], req.body['subject'], req.body['content']);
+  sendContactMail(req.body['email'], req.body['subject'], req.body['content']);
   res.send("Ok");
 });
 
