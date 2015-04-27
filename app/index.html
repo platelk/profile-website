@@ -71,7 +71,7 @@
       <h4>Navigation</h4>
       <ul>
         <li><a data-scroll href="#main-page">Le projet</a></li>
-        <li><a data-scroll href="#section-1">Pourquoi profile</a></li>
+        <li><a data-scroll href="#section-1">Pourquoi ProfileRH</a></li>
         <li><a data-scroll href="#section-2">Pour l'entreprise</a></li>
         <li><a data-scroll href="#section-3">L'équipe</a></li>
         <li><a data-scroll href="#contact">Contact</a></li>
@@ -177,7 +177,7 @@
           <div class="col-md-6">
             <div>
               <div class="team-member">
-                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle"/>
+                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle img-profile"/>
                 <p>
                   <span class="name">Guillaume PENOT</span><br/>
                   <span class="job">CEO</span><br/>
@@ -193,7 +193,7 @@
           <div class="col-md-6">
             <div>
               <div class="team-member">
-                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle"/>
+                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle img-profile"/>
                 <p>
                   <span class="name">Marc-Antoine SERGEANT</span><br/>
                   <span class="job">COO</span><br/>
@@ -211,7 +211,7 @@
           <div class="col-md-6">
             <div>
               <div class="team-member">
-                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle"/>
+                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle img-profile"/>
                 <p>
                   <span class="name">Thomas CATTY</span><br/>
                   <span class="job">CTO</span><br/>
@@ -227,14 +227,14 @@
           <div class="col-md-6">
             <div>
               <div class="team-member">
-                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle"/>
+                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle img-profile"/>
                 <p>
                   <span class="name">Alexandre DECENEUX</span><br/>
                   <span class="job">Développeur</span><br/>
-                  <div class="social-icon-list">
-                    <img src="images/social-media-icon/32x32%20PNG/linkedin.png" class="img-circle" alt=""/>
-                  </div><br/>
-                  <span class="description">Etudiant a Epitech</span>
+                <div class="social-icon-list">
+                  <img src="images/social-media-icon/32x32%20PNG/linkedin.png" class="img-circle" alt=""/>
+                </div><br/>
+                <div class="description">Etudiant à Epitech</div>
                 </p>
               </div>
             </div>
@@ -245,7 +245,7 @@
           <div class="col-md-6">
             <div>
               <div class="team-member">
-                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle"/>
+                <img src="images/avatar/the_koi.jpg" class="col-md-2 img-circle img-profile"/>
                 <p>
                   <span class="name">Kévin PLATEL</span><br/>
                   <span class="job">Développeur</span><br/>
@@ -294,7 +294,7 @@
         </div>
       </div>
       <footer class="section center-block theme--multi-device-layouts" id="footer">
-        <p>All right reserved to ProfileRH</p>
+        <p>All rights reserved to ProfileRH</p>
       </footer>
     </main>
 
@@ -319,6 +319,9 @@
         posting.done(function(data) {
           console.log("Receive: "+ data);
           toastr.info("Votre message à bien été reçu par nos équipe");
+          $("#email").val("");
+          $("#subject").val("");
+          $("#content").val("");
         });
         posting.fail(function() {
           toastr.warning("Erreur lors de l'envoie");

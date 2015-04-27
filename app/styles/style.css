@@ -3575,6 +3575,10 @@ main {
       height: 85px;
       width: 85px; } }
 
+@media screen and (max-width: 1050px) {
+  #section-3 {
+    width: 90%; } }
+
 @media screen and (max-width: 800px) {
   #section-3 .row .col-md-6 {
     border-bottom-style: solid;
@@ -3599,6 +3603,8 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px; }
+  .team-member .img-profile {
+    margin: 10px; }
   .team-member img {
     width: 170px;
     height: 150px;

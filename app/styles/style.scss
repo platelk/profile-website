@@ -407,6 +407,12 @@
   }
 }
 
+#section-3 {
+  @media screen and (max-width: 1050px) {
+    width: 90%;
+  }
+}
+
 #section-3 .row {
 
   .col-md-6 {
@@ -445,6 +451,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
+
+  @media screen and (max-width: 1050px) {
+  }
+
+  .img-profile {
+    margin: 10px;
+  }
 
   img {
     width: 170px;
