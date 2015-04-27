@@ -86,7 +86,7 @@
         <div class="title text-center g--half g--centered">
           <div>
             <h1><img src="images/profilrh-white.png"></h1>
-            <h3>Solution simple de gestion de vos RH</h3>
+            <h3>Solution simple de gestion de vos RH en entreprise</h3>
           </div>
         </div>
       </div>
@@ -309,7 +309,7 @@
         var subject = $("#subject").val();
         var content = $("#content").val();
 
-        if (subject === "" || content === "") {
+        if (subject === "" || content == "") {
           toastr.warning("Merci de remplir tout les champs avant d'envoyer votre message");
           return;
         }
@@ -318,7 +318,7 @@
         var posting = $.post("/contact", data);
         posting.done(function(data) {
           console.log("Receive: "+ data);
-          toastr.info("Votre message à bien été reçu par nos équipe");
+          toastr.info("Votre message à bien été envoyé à nos équipes");
           $("#email").val("");
           $("#subject").val("");
           $("#content").val("");
