@@ -1,7 +1,7 @@
 # Profile RH website
 
 ## Apropos
-Ce projet est le site web vitrine de Profile RH.
+Ce projet est une proposition de site vitrine pour la plateforme Profile RH.
 
 ## Technologie utilisé
 Plusieur bibliothèque et outils sont utilisé pour ce site web. Le coeur est basé sur le Web Starter Kit.
